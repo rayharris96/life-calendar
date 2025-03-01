@@ -76,14 +76,9 @@
                     border: 1px solid #ccc;
                     position: relative;
                 }
-                .week.milestone::after {
-                    content: "★";
-                    position: absolute;
-                    top: -5px;
-                    right: -5px;
-                    font-size: 10px;
-                    color: gold;
-                    text-shadow: 0px 0px 1px black;
+                .week.milestone {
+                    border: 2px solid gold;
+                    box-shadow: 0 0 3px gold;
                 }
                 .lived {
                     background-color: #555555;
@@ -340,9 +335,7 @@
                         <span>Score 10</span>
                     </div>
                     <div class="legend-item">
-                        <div class="legend-color position-relative">
-                            <span style="position: absolute; top: -5px; right: -5px; font-size: 10px; color: gold; text-shadow: 0px 0px 1px black;">★</span>
-                        </div>
+                        <div class="legend-color" style="border: 2px solid gold; box-shadow: 0 0 3px gold;"></div>
                         <span>Milestone</span>
                     </div>
                 </div>
